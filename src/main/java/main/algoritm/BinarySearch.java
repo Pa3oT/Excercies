@@ -5,7 +5,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7};
         System.out.println(binarySearch(array, 3));
-        System.out.println(binarySearch(null, 3));
+        recBinarySearch(3, array, 0, array.length - 1);
     }
 
     private static int binarySearch(int[] array, int key) {
@@ -34,10 +34,6 @@ public class BinarySearch {
             }
         }
         return -(1 + left);
-    }
-
-    public static int recursionBinarySearch(int key, int[] a) {
-        return recBinarySearch(key, a, 0, a.length - 1);
     }
 
     private static int recBinarySearch(int key, int[] a, int lo, int hi) {

@@ -6,21 +6,18 @@ public class BubbleSorter {
     static int[] mas = new int[]{6, 5, 4, 3, 2, 1};
 
     public static void main(String args[]) {
-        //iteratorBubbleSort();
-        bubbleSorted(mas, 0, mas.length - 1);
+        iteratorBubbleSort();
+        //bubbleSorted(mas, 0, mas.length - 1);
         System.out.println(Arrays.toString(mas));
         int[] arr = {-1, 10, -999, 20, 1, 2, 3, -100, 200, 20000, 99999, -99999};
         System.out.println(Arrays.toString(recursiveBubbleSort(arr, arr.length-1)));
     }
 
     static void iteratorBubbleSort() {
-        int currentElement, nextElement;
         for (int barrier = mas.length - 1; barrier >= 0; barrier--) {
             for (int index = 0; index < barrier; index++) {
-                currentElement = index;
-                nextElement = currentElement + 1;
-                if (mas[currentElement] > mas[nextElement]) {
-                    swap(currentElement, nextElement);
+                if (mas[index] > mas[index + 1]) {
+                    swap(index, index + 1);
                 }
             }
         }

@@ -2,17 +2,8 @@ package main.algoritm;
 
 public class Factorial {
 	public static void main(String args[]) {
-		//System.out.println(calculate(4));
+		System.out.println(calculate(4));
 		//System.out.println(iterableFact(4));
-
-		int i = -2;
-		int j = -30;
-
-		i = i + j; //5
-		j = i - j; //2
-		i = i - j; //3
-		System.out.println("i = " + i);
-		System.out.println("j = " + j);
 	}
 
 	public static int calculate(int n) {

@@ -15,7 +15,6 @@ public class InsertionSorter {
 			}
 			mas[location + 1] = newElement;
 		}
-		Arrays.asList(mas);
 		System.out.println(Arrays.toString(mas));
 	}
 }
