@@ -1,9 +1,5 @@
 package main.algoritm.sort;
 
-
-
-import jdk.nashorn.internal.objects.annotations.Constructor;
-
 import java.util.Arrays;
 
 public class MergeTwoSortedList {
